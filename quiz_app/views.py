@@ -22,7 +22,7 @@ def show_questions(request):
                     result2.append(qs.title)
         return JsonResponse({'data':result,'answer':result2})
     else:
-        return JsonResponse({"status": "error", "msg": "faghat get mojazeh"}, status=403)    
+        return JsonResponse({"status": "error"})    
 
 
 
